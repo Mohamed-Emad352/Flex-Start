@@ -1,0 +1,15 @@
+{
+  "name": "flexstart",
+  "version": "1.0.0",
+  "description": "A responsive template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/FireEagle829/Flex-Start.git"
+  },
+  "author": "Mohamed Emad",
+  "license": "ISC"
+}
