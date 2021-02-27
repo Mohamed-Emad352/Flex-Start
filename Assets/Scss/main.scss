@@ -1,4 +1,4 @@
- // abstracts import
+// abstracts import
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -18,3 +18,5 @@
 @import "layout/sidebar";
 //pages inputs
 @import "pages/home";
+//vendors import
+@import "vendors/bootstrap/bootstrap";
