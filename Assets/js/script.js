@@ -67,12 +67,16 @@ var slideToggle = (target, duration = 500) => {
 
 //#region Mobile Navbar
 const hamburgerMenu = document.querySelector(".nav__hamburger--menu");
-const closeButton = document.querySelector(".mobile__nav--close__button");
-const dropdownMenus = document.querySelectorAll(".dropdown__menu");
-const mobileNavMenu = document.querySelector(".mobile__nav__menu");
-document.querySelectorAll(".nav__dropdown__menu").forEach((menu) => {
-  slideUp(menu);
-});
+const closeButton = document.querySelector(
+  ".mobile__nav .mobile__nav--close__button"
+);
+const dropdownMenus = document.querySelectorAll(".mobile__nav .dropdown__menu");
+const mobileNavMenu = document.querySelector(".mobile__nav .mobile__nav__menu");
+document
+  .querySelectorAll(".mobile__nav .nav__dropdown__menu")
+  .forEach((menu) => {
+    slideUp(menu);
+  });
 const showNavbar = () => {
   const mobileNav = document.querySelector(".mobile__nav");
   const blackOverlay = document.querySelector(".black__overlay");
@@ -99,9 +103,11 @@ const hideNavbar = () => {
   setTimeout(() => {
     blackOverlay.style.display = "none";
   }, 600);
-  document.querySelectorAll(".nav__dropdown__menu").forEach((menu) => {
-    slideUp(menu);
-  });
+  document
+    .querySelectorAll(".mobile__nav .nav__dropdown__menu")
+    .forEach((menu) => {
+      slideUp(menu);
+    });
 };
 
 dropdownMenus.forEach(function (menu) {
