@@ -1,0 +1,13 @@
+.button-primary {
+  padding: 1.5rem 5rem 1.5rem 5rem;
+  font-size: 1.5rem;
+  color: white;
+  border-radius: 5px;
+  background-color: $color-background-primary;
+  border: none;
+  transition: 0.2s ease-in-out background-color;
+}
+
+.button-primary:hover {
+  background-color: lighten($color: $color-background-primary, $amount: 10);
+}

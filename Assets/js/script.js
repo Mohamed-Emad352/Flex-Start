@@ -142,3 +142,10 @@ blackOverlay.addEventListener("click", hideNavbar);
 hamburgerMenu.addEventListener("click", showNavbar);
 closeButton.addEventListener("click", hideNavbar);
 //#endregion
+
+//#region Smooth Scrolling
+const mainButton = document.getElementById("main");
+mainButton.addEventListener("click", () => {
+  document.querySelector("main").scrollIntoView({ behavior: "smooth" });
+});
+//#endregion
