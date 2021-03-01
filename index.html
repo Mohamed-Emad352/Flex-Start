@@ -4,7 +4,108 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Assets/css/style.min.css" />
+    <link rel="stylesheet" href="node_modules/aos/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/edc6da7b2b.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Flex Start</title>
   </head>
-  <body></body>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container">
+        <div class="nav__brand">
+          <img class="nav__brand--logo" src="Assets/images/logo.png" />
+          <h1>FlexStart</h1>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">Home</li>
+          <li class="nav__item">About</li>
+          <li class="nav__item">Services</li>
+          <li class="nav__item">Portfolio</li>
+          <li class="nav__item">Team</li>
+          <li class="nav__item">Blog</li>
+          <div class="nav__item nav__dropdown">
+            DropDown <i class="fas fa-chevron-down"></i>
+            <div class="nav__dropdown__menu">
+              <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <div class="nav__dropdown--2" style="position: relative">
+                  DropDown <i class="fas fa-chevron-right"></i>
+                  <div class="nav__dropdown__menu--2">
+                    <ul>
+                      <li>Item 1</li>
+                      <li>Item 2</li>
+                      <li>Item 3</li>
+                      <li>Item 4</li>
+                    </ul>
+                  </div>
+                </div>
+                <li>Item 4</li>
+              </ul>
+            </div>
+          </div>
+          <li class="nav__item">Contact</li>
+          <li class="nav__item">Get Started</li>
+        </ul>
+        <div class="nav__hamburger--menu">
+          <div class="nav__hamburger--menu-line1"></div>
+          <div class="nav__hamburger--menu-line2"></div>
+          <div class="nav__hamburger--menu-line3"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- mobile nav -->
+    <div class="mobile__nav">
+      <div class="mobile__nav--close__button">
+        <i class="fas fa-times"></i>
+      </div>
+      <ul class="mobile__nav__menu">
+        <li class="nav__item">Home</li>
+        <li class="nav__item">About</li>
+        <li class="nav__item">Services</li>
+        <li class="nav__item">Portfolio</li>
+        <li class="nav__item">Team</li>
+        <li class="nav__item">Blog</li>
+        <div class="nav__item nav__dropdown dropdown__menu">
+          DropDown <i class="fas fa-chevron-down"></i>
+          <div class="nav__dropdown__menu">
+            <ul>
+              <li>Item 1</li>
+              <li>Item 2</li>
+              <div
+                class="nav__dropdown--2 dropdown__menu"
+                style="position: relative"
+              >
+                DropDown <i class="fas fa-chevron-down"></i>
+                <div class="nav__dropdown__menu--2 nav__dropdown__menu">
+                  <ul>
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                  </ul>
+                </div>
+              </div>
+              <li>Item 4</li>
+            </ul>
+          </div>
+        </div>
+      </ul>
+    </div>
+
+    <div class="black__overlay"></div>
+
+    <script src="node_modules/aos/dist/aos.js"></script>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script defer src="Assets/js/script.js"></script>
+  </body>
 </html>
