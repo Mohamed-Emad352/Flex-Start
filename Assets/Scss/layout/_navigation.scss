@@ -162,6 +162,6 @@ nav {
 .navigation-fixed {
   padding-bottom: 1.5rem;
   box-shadow: 0px 10px 10px -15px $dark;
-  background: white;
-  z-index: 5;
+  background: white !important;
+  z-index: 15;
 }

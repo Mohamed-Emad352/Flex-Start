@@ -38,4 +38,8 @@ header {
       margin-bottom: 50px;
     }
   }
+
+  @include media($mobile) {
+    padding: 12rem 2rem 10rem 2rem;
+  }
 }

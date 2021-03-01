@@ -137,6 +137,8 @@ window.addEventListener("beforeunload", () => {
   document.documentElement.scrollTop = 0;
 });
 
+const blackOverlay = document.querySelector(".black__overlay");
+blackOverlay.addEventListener("click", hideNavbar);
 hamburgerMenu.addEventListener("click", showNavbar);
 closeButton.addEventListener("click", hideNavbar);
 //#endregion
