@@ -1,13 +1,17 @@
 nav {
   top: 0;
   color: $color-font-primary;
+  position: fixed;
+  width: 100%;
+  z-index: 6;
+  transition: 0.3s ease-in-out background, 0.3s ease-in-out padding;
   background: transparent !important;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
-  padding: 3rem;
+  padding: 2rem;
   background-color: white;
   .nav__brand {
     display: flex;
@@ -67,22 +71,23 @@ nav {
       .nav__dropdown__menu {
         opacity: 1;
         transform: translateY(0px);
-        z-index: 0;
+        pointer-events: auto;
       }
     }
-
     .nav__dropdown__menu {
       text-align: left;
+      pointer-events: none;
       position: absolute;
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0px 0px 5px 1px $dark;
       top: 50px;
       width: 145px;
+      background: white;
       transform: translateY(40px);
       opacity: 0;
       transition: 0.3s ease-in-out opacity, 0.3s ease-in-out transform;
-      z-index: -1;
+      z-index: 10 !important;
       ul {
         list-style: none;
         li,
@@ -101,10 +106,17 @@ nav {
           width: 200px;
         }
 
+        .nav__dropdown--2:hover {
+          .nav__dropdown__menu--2 {
+            pointer-events: auto;
+          }
+        }
+
         .nav__dropdown__menu--2 {
           text-align: left;
           position: absolute;
-          padding: 10px;
+          background: white;
+          padding: 20px;
           border-radius: 10px;
           box-shadow: 0px 0px 5px 1px $dark;
           width: 125px;
@@ -145,4 +157,11 @@ nav {
       display: flex;
     }
   }
+}
+
+.navigation-fixed {
+  padding-bottom: 1.5rem;
+  box-shadow: 0px 10px 10px -15px $dark;
+  background: white;
+  z-index: 5;
 }

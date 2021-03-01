@@ -1,5 +1,5 @@
 //#region  Aos Initilzation
-AOS.init();
+AOS.init({ once: true });
 //#endregion
 
 //#region Helper Functions
@@ -65,7 +65,7 @@ var slideToggle = (target, duration = 500) => {
 };
 //#endregion
 
-//#region Mobile Navbar
+//#region Navbar
 const hamburgerMenu = document.querySelector(".nav__hamburger--menu");
 const closeButton = document.querySelector(
   ".mobile__nav .mobile__nav--close__button"
@@ -123,6 +123,18 @@ dropdownMenus.forEach(function (menu) {
       }, 500);
     } catch {}
   });
+});
+
+window.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 50) {
+    document.querySelector("nav").classList.add("navigation-fixed");
+  } else {
+    document.querySelector("nav").classList.remove("navigation-fixed");
+  }
+});
+
+window.addEventListener("beforeunload", () => {
+  document.documentElement.scrollTop = 0;
 });
 
 hamburgerMenu.addEventListener("click", showNavbar);
