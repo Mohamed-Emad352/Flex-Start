@@ -19,6 +19,7 @@
 @import "layout/navigation";
 @import "layout/sidebar";
 @import "layout/main";
+@import "layout/section-1";
 
 //pages inputs
 @import "pages/home";
@@ -40,11 +41,11 @@ html {
   }
 
   @include media($tablet) {
-    font-size: 50%;
+    font-size: 55%;
   }
 
   @include media($mobile) {
-    font-size: 40%;
+    font-size: 50%;
   }
 }
 

@@ -148,4 +148,7 @@ const mainButton = document.getElementById("main");
 mainButton.addEventListener("click", () => {
   document.querySelector("main").scrollIntoView({ behavior: "smooth" });
 });
+document.querySelector("#header").addEventListener("click", () => {
+  document.querySelector("header").scrollIntoView({ behavior: "smooth" });
+});
 //#endregion
