@@ -1,0 +1,52 @@
+#section-3 {
+  font-family: $font-secondary;
+  p {
+    color: $color-font-secondary;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  h1 {
+    color: $color-font-primary;
+    font-weight: bolder;
+    font-size: 4rem;
+  }
+  .row {
+    align-items: center !important;
+  }
+  .gridview {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 0 3rem 0;
+    grid-gap: 2rem;
+    @include media($mobile) {
+      grid-template-columns: 1fr;
+      width: 90%;
+      margin: auto;
+    }
+    div {
+      padding: 1.5rem;
+      box-shadow: 0 0 10px 0px #e6e6e6;
+      display: flex;
+      align-items: center;
+      color: $color-font-primary;
+      i {
+        margin-right: 15px;
+        transition: 0.2s ease-in-out color, 0.2s ease-in-out background-color;
+        padding: 10px;
+        background-color: $color-background-secondary;
+        border-radius: 5px;
+      }
+      h4 {
+        font-weight: bolder;
+        font-size: 1.7rem;
+      }
+    }
+    div:hover {
+      i {
+        background-color: $color-background-primary;
+        color: white;
+      }
+    }
+  }
+}

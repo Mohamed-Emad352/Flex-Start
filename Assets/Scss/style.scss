@@ -20,6 +20,8 @@
 @import "layout/sidebar";
 @import "layout/main";
 @import "layout/section-1";
+@import "layout/section-2";
+@import "layout/section-3";
 
 //pages inputs
 @import "pages/home";
@@ -36,16 +38,13 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  @include media($laptop) {
+
+  @include media($tablet) {
     font-size: 60%;
   }
 
-  @include media($tablet) {
-    font-size: 55%;
-  }
-
   @include media($mobile) {
-    font-size: 50%;
+    font-size: 55%;
   }
 }
 

@@ -1,0 +1,53 @@
+[33mcommit 1a638d4de31243c21e964c7bdbfee0761e4ce92c[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Tue Mar 2 06:42:10 2021 +0200
+
+    Added section-1
+
+[33mcommit 7bf846a81f568577cecd751d84d27b63bf91b521[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Tue Mar 2 00:06:53 2021 +0200
+
+    Added Main Section
+
+[33mcommit 34d5b5184965cfa7f3aec201f3e84078d7862a19[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Mon Mar 1 18:49:17 2021 +0200
+
+    Fixed mobile navigation bug
+
+[33mcommit afb34180d9fc58df5818070a5fb66ec13a7c60a1[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Mon Mar 1 18:31:36 2021 +0200
+
+    Added Header
+
+[33mcommit ebccf65fe404f7d26ccf4a22ccc10bb6baa58292[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Mon Mar 1 04:27:06 2021 +0200
+
+    Fixed dropdown bug
+
+[33mcommit 5f633e016fe6e06d90783033221ff92637fccd08[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Mon Mar 1 04:05:10 2021 +0200
+
+    Added navigation bar & mobile navigation
+
+[33mcommit 0943a42ea89599f1030468fceb413a7a7b1be2af[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Sat Feb 27 21:27:51 2021 +0200
+
+    Installed dependincies
+
+[33mcommit fdd9fca79dd8830ff724013bae7954752f3626de[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Sat Feb 27 21:16:05 2021 +0200
+
+    Installed dependincies
+
+[33mcommit 0d8f4ca4a421ebe406629f9b8eeeb1b7084dc534[m
+Author: Mohamed <memad352@gmail.com>
+Date:   Sat Feb 27 21:11:01 2021 +0200
+
+    Initialized project
