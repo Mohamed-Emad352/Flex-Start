@@ -152,3 +152,29 @@ document.querySelector("#header").addEventListener("click", () => {
   document.querySelector("header").scrollIntoView({ behavior: "smooth" });
 });
 //#endregion
+
+//#region Tabs Menu
+const tabs = document.querySelectorAll(".tab");
+const content = document.querySelectorAll(".tab__content");
+tabs.forEach((tab) => {
+  tab.addEventListener("click", function () {
+    tabs.forEach((tab_) => {
+      tab_.classList.remove("tab__menu--active");
+    });
+    this.classList.add("tab__menu--active");
+    const contentToBeShown = document.querySelector(
+      `#content${this.id[this.id.length - 1]}`
+    );
+    content.forEach((content_) => {
+      content_.style.opacity = "0";
+      setTimeout(() => {
+        content_.style.display = "none";
+        contentToBeShown.style.display = "block";
+        setTimeout(() => {
+          contentToBeShown.style.opacity = "1";
+        }, 20);
+      }, 580);
+    });
+  });
+});
+//#endregion

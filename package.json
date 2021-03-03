@@ -17,6 +17,7 @@
     "@srexi/purecounterjs": "^1.1.1",
     "aos": "^2.3.4",
     "bootstrap": "^4.6.0",
+    "isotope-layout": "^3.0.6",
     "photoswipe": "^4.1.3"
   }
 }
