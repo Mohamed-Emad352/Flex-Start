@@ -1,0 +1,43 @@
+#section-6 {
+  font-family: $font-secondary;
+  p.text-center {
+    color: $color-font-secondary;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  h1 {
+    color: $color-font-primary;
+    font-size: 4rem;
+    font-weight: bolder;
+  }
+  .gridview {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    @include media($tablet) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media($mobile) {
+      grid-template-columns: 1fr;
+    }
+    .grid__element:nth-child(1) {
+      @include gridElement(#2db6fa);
+    }
+    .grid__element:nth-child(2) {
+      @include gridElement(#f68c09);
+    }
+    .grid__element:nth-child(3) {
+      @include gridElement(#08da4e);
+    }
+    .grid__element:nth-child(4) {
+      @include gridElement(#e9222c);
+    }
+    .grid__element:nth-child(5) {
+      @include gridElement(#b50edf);
+    }
+    .grid__element:nth-child(6) {
+      @include gridElement(#f51f9c);
+    }
+  }
+}

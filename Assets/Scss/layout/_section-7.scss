@@ -1,0 +1,95 @@
+#section-7 {
+  font-family: $font-secondary;
+  .subheader {
+    color: $color-font-secondary;
+    letter-spacing: 1.5px;
+    font-weight: bolder;
+    font-size: 1.5rem;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: $color-font-primary;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    @include media($laptop) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include media($mobile) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    p {
+      font-size: 1.5rem;
+      color: $dark;
+    }
+    p.text-crossed {
+      color: #c4c4c4;
+      text-decoration: line-through;
+    }
+    div:not(.price) {
+      padding: 2rem;
+      transition: 0.3s ease-in-out transform;
+      background-color: white;
+      box-shadow: 0px 0px 15px 5px #f3f3f3;
+      border-radius: 5px;
+      h3 {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+      .price {
+        font-size: 2.5rem;
+        color: $dark;
+        font-weight: bolder;
+        font-family: $font-primary;
+        margin-bottom: 40px;
+        sub {
+          font-size: 5rem;
+        }
+        span {
+          font-family: $font-secondary;
+          font-size: 16px;
+          color: #a5a5a5;
+        }
+      }
+    }
+    div:nth-child(1) {
+      h3 {
+        color: #07d5c0;
+      }
+    }
+    div:nth-child(2) {
+      h3 {
+        color: #65c600;
+      }
+    }
+    div:nth-child(3) {
+      h3 {
+        color: #ff9526;
+      }
+    }
+    div:nth-child(4) {
+      h3 {
+        color: #ff1f82;
+      }
+    }
+    div:hover:not(.price) {
+      transform: scale(1.1);
+    }
+    button {
+      color: $color-font-secondary;
+      background-color: white;
+      border-radius: 50px;
+      border: 1px solid $color-font-secondary;
+      padding: 1rem 5rem 1rem 5rem;
+      font-size: 1.5rem;
+      transition: 0.3s ease-in-out background-color, 0.3s ease-in-out color;
+    }
+    button:hover {
+      background-color: $color-font-secondary;
+      color: white;
+    }
+  }
+}
